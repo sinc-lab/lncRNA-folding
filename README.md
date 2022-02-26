@@ -35,7 +35,7 @@ From these sequences, the following three sce subsets are provided:
 
 - [sce3k](data/sce3k.txt): All the sequences with more than 200 nt.
 - [sce188](data/sce188.txt): 188 sequences obtained from sce3k by identifying non-coding transcripts using the coding potential calculator 2 [CPC2](https://pubmed.ncbi.nlm.nih.gov/28521017/).
-- [sce18](data/sce18nc.txt): 18 sequences obtained by taking only those sequences from sce188 that were not previously classified as mRNA in [Kertesz2010]
+- [sce18](data/sce18.txt): 18 sequences obtained by taking only those sequences from sce188 that were not previously classified as mRNA in [Kertesz2010]
   
 ### Curated dataset of lncRNAs
 
