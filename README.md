@@ -2,10 +2,13 @@
 
 This repository contains the source code and data for reproducibility of:
 
-    Secondary structure prediction of long non-coding RNA: review and experimental comparison of existing approaches, 
-    L.A. Bugnon, A.A. Edera, S. Prochetto, M. Gerard, J. Raad, E. Fenoy, M. Rubiolo, U. Chorostecki, T. Gabaldón, F. Ariel, L. Di Persia, D.H. Milone & G. Stegmayer, 2022 (under review).
+    Secondary structure prediction of long non-coding RNA: 
+    review and experimental comparison of existing approaches, 
+    L.A. Bugnon, A.A. Edera, S. Prochetto, M. Gerard, J. Raad, 
+    E. Fenoy, M. Rubiolo, U. Chorostecki, T. Gabaldón, F. Ariel,
+    L. Di Persia, D.H. Milone & G. Stegmayer, 2022 (under review).
 
-![graphical abstract](.img/abstract.png)
+![graphical abstract](img/abstract.png)
 
 In contrast to messenger RNAs, the function of long non-coding RNAs (lncRNAs) largely depends on their structure, which determines interactions with other molecules. During the last 20 years, classical approaches for predicting RNA secondary structure have been based on dynamic programming and thermodynamics calculations. In the last 4 years, a growing number of machine learning-based models, including deep learning, have achieved breakthrough performance in structure prediction of biomolecules such as proteins and have outperformed classical methods in small RNAs folding.
 
