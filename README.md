@@ -469,12 +469,12 @@ base-pair probabilities</td>
 <td>Abstract shape analysis</td>
 <td>
 
-[Available](https://bibiserv.cebitec.uni-bielefeld.de/rnashapes)
+[Available](http://bibiserv.cebitec.uni-bielefeld.de/rnashapes)
 
 </td>
 <td>
 
-[Available](https://bibiserv.cebitec.uni-bielefeld.de/rnashapes?id=rnashapes_view_webservice)
+[Available](http://bibiserv.cebitec.uni-bielefeld.de/rnashapes?id=rnashapes_view_webservice)
 
 </td>
 <td>
@@ -495,12 +495,12 @@ base-pair probabilities</td>
 <td>Abstract shape analysis</td>
 <td>
 
-[Available](https://bibiserv.cebitec.uni-bielefeld.de/pkiss)
+[Available](http://bibiserv.cebitec.uni-bielefeld.de/pkiss)
 
 </td>
 <td>
 
-[Available](https://bibiserv.cebitec.uni-bielefeld.de/pkiss?id=pkiss_view_webservive)
+[Available](http://bibiserv.cebitec.uni-bielefeld.de/pkiss?id=pkiss_view_webservive)
 
 </td>
 <td>
