@@ -2,26 +2,31 @@
 
 This repository contains the source code and data for reproducibility of:
 
-    Secondary structure prediction of long non-coding RNA: review and experimental comparison of existing approaches, 
-    L.A. Bugnon, A.A. Edera, S. Prochetto, M. Gerard, J. Raad, E. Fenoy, M. Rubiolo, U. Chorostecki, T. Gabaldón, F. Ariel, L. Di Persia, D.H. Milone & G. Stegmayer, 2022 (under review).
+*"Secondary structure prediction of long non-coding RNA: 
+review and experimental comparison of existing approaches, 
+L.A. Bugnon, A.A. Edera, S. Prochetto, M. Gerard, J. Raad, 
+E. Fenoy, M. Rubiolo, U. Chorostecki, T. Gabaldón, F. Ariel,
+L. Di Persia, D.H. Milone & G. Stegmayer, 2022 (under review)."*
 
-![graphical abstract](.img/abstract.png)
+<p align="center">
+<img src="./img/abstract.png" alt="abstract" width = 350px height = 500px>
+</p>
 
 In contrast to messenger RNAs, the function of long non-coding RNAs (lncRNAs) largely depends on their structure, which determines interactions with other molecules. During the last 20 years, classical approaches for predicting RNA secondary structure have been based on dynamic programming and thermodynamics calculations. In the last 4 years, a growing number of machine learning-based models, including deep learning, have achieved breakthrough performance in structure prediction of biomolecules such as proteins and have outperformed classical methods in small RNAs folding.
 
 Nevertheless, the accurate prediction for lncRNA intricate structures is still challenging. The aim of this repository is to serve as a public benchmark, with an unified and consistent experimental setup based on curated structures and probing data of lncRNAs. The repository includes:
 
 - 19 classical and recent methods for RNA structure prediction.
-- Two manually curated datasets of RNA sequences whose reference structures have been experimentally validated by chemical probing methods.
-- Two different metrics for comparing predictions with reference structures represented as biochemical probing scores and dot-bracket notation. 
+- 2 curated datasets of RNA sequences whose reference structures have been experimentally validated by chemical probing methods.
+- 2 metrics for comparing predictions with reference structures represented as biochemical probing scores and dot-bracket notation. 
 
-The Mean Average Similarity (MAS) is a novel metric proposed in this study. Unlike classic metrics, MAS assesses predictive performance using probing scores, leading to a more sensitive measurement and allows for comparative analyses not biased by the method used to obtain the reference structures. This score was tested in several cases, which are provided as an [interactive notebook](results/mean_average_similarity_demo.ipynb).
+The Mean Average Similarity (MAS) is a novel metric proposed in this study. Unlike classic metrics, MAS assesses predictive performance using probing scores, leading to a more sensitive measurement and allows for comparative analyses not biased by the method used to obtain the reference structures. This score was tested in several cases, which are provided as an [interactive notebook](https://colab.research.google.com/github/sinc-lab/lncRNA-folding/blob/main/results/mean_absolute_similarity_demo.ipynb).
 
 ## Datasets
 
 ### Saccharomyces cerevisiae (sce) dataset
 
-This dataset contains the structural profiles for 3,199 yeast RNAs sequences:
+This dataset contains the structural profiles for [3,199 yeast](https://doi.org/10.1038/nature09322) RNAs sequences:
 
 - [sce_genes_folded.tab](https://genie.weizmann.ac.il/pubs/PARS10/data/sce_genes_folded.tab.gz): Sequences and dot-bracket reference structures.
 - [sce_PARS_score.tab](https://genie.weizmann.ac.il/pubs/PARS10/data/sce_Score.tab.gz): Biochemical probing data obtained from PARS.
@@ -30,7 +35,7 @@ From these sequences, the following three sce subsets are provided:
 
 - [sce3k](data/sce3k.txt): All the sequences with more than 200 nt.
 - [sce188](data/sce188.txt): 188 sequences obtained from sce3k by identifying non-coding transcripts using the coding potential calculator 2 [CPC2](https://pubmed.ncbi.nlm.nih.gov/28521017/).
-- [sce18](data/sce18nc.txt): 18 sequences obtained by taking only those sequences from sce188 that were not previously classified as mRNA in [Kertesz2010]
+- [sce18](data/sce18.txt): 18 sequences obtained by taking only those sequences from sce188 that were [not previously classified as mRNA](https://doi.org/10.1038/nature09322).
   
 ### Curated dataset of lncRNAs
 
@@ -464,12 +469,12 @@ base-pair probabilities</td>
 <td>Abstract shape analysis</td>
 <td>
 
-[Available](https://bibiserv.cebitec.uni-bielefeld.de/rnashapes)
+[Available](http://bibiserv.cebitec.uni-bielefeld.de/rnashapes)
 
 </td>
 <td>
 
-[Available](https://bibiserv.cebitec.uni-bielefeld.de/rnashapes?id=rnashapes_view_webservice)
+[Available](http://bibiserv.cebitec.uni-bielefeld.de/rnashapes?id=rnashapes_view_webservice)
 
 </td>
 <td>
@@ -490,12 +495,12 @@ base-pair probabilities</td>
 <td>Abstract shape analysis</td>
 <td>
 
-[Available](https://bibiserv.cebitec.uni-bielefeld.de/pkiss)
+[Available](http://bibiserv.cebitec.uni-bielefeld.de/pkiss)
 
 </td>
 <td>
 
-[Available](https://bibiserv.cebitec.uni-bielefeld.de/pkiss?id=pkiss_view_webservive)
+[Available](http://bibiserv.cebitec.uni-bielefeld.de/pkiss?id=pkiss_view_webservive)
 
 </td>
 <td>
@@ -694,4 +699,8 @@ base-pair probabilities</td>
 
 Each method was used to predict the secondary structure for each sequence in the datasets. Resulting structures are available in the [predictions](predictions) folder.
 
-Finally, the metrics definition, prediction comparisons and figures generation are described in  the [results](results) notebooks.
+Finally, the metrics definition, prediction comparisons and figures generation are described in  the [results](results) notebooks:
+
+- [results_sce](https://colab.research.google.com/github/sinc-lab/lncRNA-folding/blob/main/results/results_sce.ipynb): for Saccharomyces cerevisiae dataset.
+
+- [results_lncRNA](https://colab.research.google.com/github/sinc-lab/lncRNA-folding/blob/main/results/results_lncRNA.ipynb): for curated lncRNA dataset.
