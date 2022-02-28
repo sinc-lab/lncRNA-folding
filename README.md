@@ -2,11 +2,11 @@
 
 This repository contains the source code and data for reproducibility of:
 
-*"Secondary structure prediction of long non-coding RNA: 
-review and experimental comparison of existing approaches, 
+*Secondary structure prediction of long non-coding RNA: 
+review and experimental comparison of existing approaches*, 
 L.A. Bugnon, A.A. Edera, S. Prochetto, M. Gerard, J. Raad, 
 E. Fenoy, M. Rubiolo, U. Chorostecki, T. Gabaldón, F. Ariel,
-L. Di Persia, D.H. Milone & G. Stegmayer, 2022 (under review)."*
+L. Di Persia, D.H. Milone & G. Stegmayer, 2022 (under review).
 
 <p align="center">
 <img src="./img/abstract.png" alt="abstract" width = 350px height = 500px>
@@ -33,9 +33,9 @@ This dataset contains the structural profiles for [3,199 yeast](https://doi.org/
 
 From these sequences, the following three sce subsets are provided:
 
-- [sce3k](data/sce3k.txt): All the sequences with more than 200 nt.
-- [sce188](data/sce188.txt): 188 sequences obtained from sce3k by identifying non-coding transcripts using the coding potential calculator 2 [CPC2](https://pubmed.ncbi.nlm.nih.gov/28521017/).
-- [sce18](data/sce18.txt): 18 sequences obtained by taking only those sequences from sce188 that were [not previously classified as mRNA](https://doi.org/10.1038/nature09322).
+- [sce3k](data/sce3k.txt): all the sequences with more than 200 nt.
+- [sce188](data/sce188.txt): sequences obtained from sce3k by identifying non-coding transcripts using the coding potential calculator 2 [CPC2](https://pubmed.ncbi.nlm.nih.gov/28521017/).
+- [sce18](data/sce18.txt): sequences obtained by taking only those sequences from sce188 that were [not previously classified as mRNA](https://doi.org/10.1038/nature09322).
   
 ### Curated dataset of lncRNAs
 
