@@ -6,7 +6,7 @@ This repository contains the source code and data for reproducibility of:
 review and experimental comparison of existing approaches*, 
 L.A. Bugnon, A.A. Edera, S. Prochetto, M. Gerard, J. Raad, 
 E. Fenoy, M. Rubiolo, U. Chorostecki, T. Gabaldón, F. Ariel,
-L. Di Persia, D.H. Milone & G. Stegmayer, 2022 (under review).
+L. Di Persia, D.H. Milone & G. Stegmayer, Briefings in Bioinformatics, 2022.
 
 <p align="center">
 <img src="./img/abstract.png" alt="abstract" width = 350px height = 500px>
